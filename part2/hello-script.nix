@@ -5,6 +5,7 @@ builtins.derivation {
   name = "hello";
   builder = ./build-greeter-script.sh;
   system = builtins.currentSystem;
+
   greeting = "Hello, World!";
   PATH = "${pkgs.coreutils}/bin";
 }
